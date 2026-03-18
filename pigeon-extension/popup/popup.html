@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clasificador de Correos</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div id="app">
+
+    <header>
+      <h2>Correos clasificados</h2>
+      <button id="refresh">⟳</button>
+    </header>
+
+  <div class="controls">
+  <button class="filter active" data-filter="all">Todos</button>
+  <button class="filter" data-filter="work">Laborales</button>
+  <button class="filter" data-filter="personal">Personales</button>
+  </div>
+
+    <main id="email-list">
+      <!-- Correos renderizados por JS -->
+    </main>
+    
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
